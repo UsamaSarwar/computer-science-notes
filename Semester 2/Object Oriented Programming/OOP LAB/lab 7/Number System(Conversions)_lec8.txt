@@ -1,0 +1,234 @@
+                    ===============================================================                    
+                    Java Conversion of Binary Value to Decimal, Octal & HexaDecimal
+                    ===============================================================
+Binary to Decimal conversion in Java
+-------------------------------------
+import java.util.Scanner;
+ 
+public class Binary_Decimal {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Binary to Decimal");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine(), 2);
+	}
+	
+	void convert() {
+		
+		String decimal = Integer.toString(num);
+		
+		System.out.println("Decimal Value is : " + decimal);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Binary_Decimal obj = new Binary_Decimal();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+-----------------------------------------------------------------------------------
+Binary to Octal conversion in Java
+----------------------------------------------------------------------------------
+import java.util.Scanner;
+ 
+public class Binary_Octal {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Binary to Octal");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine(), 2);
+	}
+	
+	void convert() {
+		
+		String octal = Integer.toOctalString(num);
+		
+		System.out.println("Octal Value is : " + octal);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Binary_Octal obj = new Binary_Octal();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+---------------------------------------------------------------
+Binary to HexaDecimal conversion in Java
+--------------------------------------------------------------
+import java.util.Scanner;
+ 
+public class Binary_Hexa {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Binary to HexaDecimal");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine(), 2);
+	}
+	
+	void convert() {
+		
+		String hexa = Integer.toHexString(num);
+		
+		System.out.println("HexaDecimal Value is : " + hexa);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Binary_Hexa obj = new Binary_Hexa();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+------------------------------------------------------------------------------------------------
+                    ===============================================================                    
+                    Java Conversion of Decimal Value to Binary, Octal & HexaDecimal
+                    ===============================================================
+
+Decimal to Binary conversion in Java
+------------------------------------
+import java.util.Scanner;
+ 
+public class Decimal_Binary {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Decimal to Binary");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine());
+	}
+	
+	void convert() {
+		
+		String binary = Integer.toBinaryString(num);
+		
+		System.out.println("Binary Value is : " + binary);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Decimal_Binary obj = new Decimal_Binary();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+---------------------------------------------------
+Decimal to Octal conversion in Java
+---------------------------------------------------
+import java.util.Scanner;
+ 
+public class Decimal_Octal {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Decimal to Octal");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine());
+	}
+	
+	void convert() {
+		
+		String octal = Integer.toOctalString(num);
+		
+		System.out.println("Octal Value is : " + octal);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Decimal_Octal obj = new Decimal_Octal();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+----------------------------------------------------------------
+Decimal to HexaDecimal conversion in Java
+--------------------------------------------------------------
+import java.util.Scanner;
+ 
+public class Decimal_Hexa {
+	
+	Scanner scan;
+	int num;
+	
+	void getVal() {
+		
+		System.out.println("Decimal to HexaDecimal");
+		scan = new Scanner(System.in);
+		
+		System.out.println("\nEnter the number :");
+		num = Integer.parseInt(scan.nextLine());
+	}
+	
+	void convert() {
+		
+		String hexa = Integer.toHexString(num);
+		
+		System.out.println("HexaDecimal Value is : " + hexa);
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Decimal_Hexa obj = new Decimal_Hexa();
+		
+		obj.getVal();
+		obj.convert();
+	}
+}
+======================================================================================
+Home Tasks:
+
+>>>>>>>>Java Conversion of Octal Value to Binary, Decimal & HexaDecimal
+>>>>>>>>Java Conversion of HexaDecimal Value to Binary, Decimal & Octal
+=================================================================================================================

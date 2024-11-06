@@ -1,0 +1,128 @@
+1)Checked Exception Classes
+FileNotFoundException
+ClassNotFoundException
+IOException
+InterruptedException
+2)Un-Checked Exception Classes
+ArithmeticException
+ArrayIndexOutOfBoundsException
+StringIndexOutOfBoundsException
+NumberFormateException
+NullPointerException
+NoSuchMethodException
+NoSuchFieldException
+
+..............................................................................
+try
+{
+  // statements causes problem at run time 
+}
+catch(type of exception-1 object-1)
+{
+  // statements provides user friendly error message 
+}
+catch(type of exception-2 object-2)
+{
+  // statements provides user friendly error message
+}
+finally
+{
+  // statements which will execute compulsory 
+}
+....................................................................
+//Without exception_handling
+class ExceptionDemo 
+{
+public static void main(String[] args) 
+{
+int a=10, ans=0;
+ans=a/0;
+System.out.println("Denominator not be zero");		
+}
+}
+....................................................................
+class ExceptionDemo 
+{
+public static void main(String[] args) 
+{
+int a=10, ans=0;
+try
+{
+ans=a/0;
+}
+catch (Exception e)
+{
+System.out.println("Denominator not be zero");
+}	
+}
+}
+.....................................................................
+//Multiple catch block
+import java.util.*;
+class ExceptionDemo 
+{
+public static void main(String[] args) 
+{
+int a, b, ans=0;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter any two numbers: ");
+try
+{
+	a=s.nextInt();
+	b=s.nextInt();
+	ans=a/b;
+	System.out.println("Result: "+ans);
+}
+catch(ArithmeticException ae)
+{
+System.out.println("Denominator not be zero");
+}	
+catch(Exception e)
+{
+System.out.println("Enter valid number");
+}	
+}
+}
+.........................................................
+class ExceptionDemo 
+{
+public static void main(String[] args) 
+{
+int a=10, ans=0;
+try
+{
+ans=a/0;
+}
+catch (Exception e)
+{
+System.out.println("Denominator not be zero");
+}	
+finally
+{
+System.out.println("I am from finally block");
+}
+}
+}
+..............................................................
+// save by DivZero.java
+
+package pack;
+
+public class DivZero
+{
+public void division(int a, int b)throws ArithmeticException
+{
+if(b==0)
+{
+ArithmeticException ae=new ArithmeticException("Does not enter zero for Denominator");
+throw ae;
+}
+else
+{
+int c=a/b;
+System.out.println("Result: "+c);
+}
+}
+}
+............................................................................
+

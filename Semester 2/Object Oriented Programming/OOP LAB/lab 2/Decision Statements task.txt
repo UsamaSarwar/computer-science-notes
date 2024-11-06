@@ -1,0 +1,208 @@
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a;
+      float b;
+      String s;
+      
+      Scanner i = new Scanner(System.in);
+            System.out.println("Enter a string");
+      s = i.nextLine();
+            System.out.println("Enter an integer");
+      a = i.nextInt();
+            System.out.println("Enter a float");
+      b = i.nextFloat();
+      
+      System.out.println("You entered string "+s);
+      System.out.println("You entered integer "+a);
+      System.out.println("You entered float "+b);
+    
+
+    }
+    
+}
+
+
+
+===============================================================================
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a,b,c;
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter an integer");
+      a = i.nextInt();
+                  System.out.println("Enter an integer");
+      b = i.nextInt();
+
+      c=a+b;
+    
+      System.out.println("Sum is "+c);
+   
+    
+
+    }
+    
+}
+
+==========================================================================
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a,b,c,d,e,f;
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter 1st number");
+        a = i.nextInt();
+                  System.out.println("Enter 2nd number");
+        b = i.nextInt();
+
+      c=a+b;
+      d=a-b;
+      e=a*b;
+      f=a%b;
+    
+      System.out.println("Sum is "+c);
+      System.out.println("Subtraction is "+d);
+      System.out.println("Multiplication is "+e);
+      System.out.println("Modolus is " + f);
+   
+    
+
+    }
+   
+}
+=====================================================================
+
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a,b;
+        
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter 1st number");
+        a = i.nextInt();
+                  System.out.println("Enter 2nd number");
+        b = i.nextInt();
+            
+          a++;
+          ++b;
+
+           System.out.println("Result is");
+           System.out.println(++a);
+           System.out.println(b++);
+           System.out.println(b--);
+           System.out.println(--a);
+           
+
+    
+
+    }
+   
+}
+==========================================================================
+
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+       
+         double r,a,c;
+        int ch;
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter radius of circle");
+        r = i.nextFloat();
+                  System.out.println("Enter 1 for area n 2 for circmfrence");
+        ch = i.nextInt();
+            
+
+if(ch==1)
+{a=3.14*r*r;
+System.out.println("Area of circle" +a);}
+else if(ch==2)
+{c=2*3.14*r;
+System.out.println("Circumference of circle" +c);}
+else
+{System.out.println("Invalid Choice");}
+           
+
+    
+
+    }
+   
+}
+=====================================================================================
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+       
+        int a,b,c;
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter 1st number");
+        a = i.nextInt();
+                  System.out.println("Enter 2nd number");
+        b = i.nextInt();
+         System.out.println("Enter 3rdst number");
+        c = i.nextInt();
+            
+
+
+
+if(a==b)
+ { if(a==c)
+     {System.out.println("numbers are Equal");}
+     else
+     {System.out.println("numbers are Different");}
+ }
+ else
+  { System.out.println("numbers are Different");
+  }
+
+    
+
+    }
+   
+}

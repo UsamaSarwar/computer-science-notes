@@ -1,0 +1,82 @@
+switch (studentMenu) {
+                case 1: // Change all four fields
+                    System.out.println("Please enter in a first name: ");
+
+                    String firstNameIntermediate = scan.next();
+                    firstName = firstNameIntermediate.substring(0,1).toUpperCase() + firstNameIntermediate.substring(1);
+                    System.out.println("Please enter in a middle name");
+                    middleName = scan.next();
+                    System.out.println("Please enter in a last name");
+                    lastName = scan.next();
+                    System.out.println("Please enter in an eight digit student ID number");
+                    changeID();
+                    break;
+                case 2: // Change first name
+                    System.out.println("Please enter in a first name: ");
+                    firstName = scan.next();
+                    break;
+                case 3: // Change middle name
+                    System.out.println("Please enter in a middle name");
+                    middleName = scan.next();
+                    break;
+                case 4: // Change last name
+                    System.out.println("Please enter in a last name");
+                    lastName = scan.next();
+                case 5: // Change student ID:
+                    changeID();
+                    break;
+                case 6: // Exit to main menu
+                    menuExit = true;
+                default:
+                    System.out.println("Please enter a number from 1 to 6");
+                    break;
+            }
+        }
+    }
+
+public void changeID() {
+    studentID = scan.next();
+    }
+
+
+CODE 2nd>>>>>>>>>>>>>>>>>.......
+
+public void keyTyped(KeyEvent e)
+{
+	
+	char c = e.getKeyChar();
+	
+	if(Character.isLetter(c) || Character.isISOControl(c))
+	{
+		evt = evt;
+	}
+	else
+		evt.consume();
+	}
+	
+}
+
+
+CODE 3rd>>>>>>>>>>>>>>>>>>>>>>>.
+
+public void keyTyped(KeyEvent evt)
+			{
+				
+				char c = evt.getKeyChar();
+				
+				if(Character.isLetter(c) || Character.isISOControl(c))
+					{
+					//evt = evt;
+					String text = String.valueOf(c);
+					this.setText("" + text);
+					}	
+				else
+					{
+					evt.consume();
+					JOptionPane.showMessageDialog(null,"Only letter allowed here");
+					}
+			}
+
+
+
+

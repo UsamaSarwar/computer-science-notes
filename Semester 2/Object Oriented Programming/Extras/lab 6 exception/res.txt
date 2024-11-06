@@ -1,0 +1,17 @@
+package restricted;
+
+import java.util.Scanner;
+public class Restricted {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Please enter letters:");
+    while (!sc.hasNext("[A-Za-z]+")) {
+        System.out.println("Nope, that's not it!");
+        sc.nextLine();
+    }
+    String word = sc.nextLine();
+    System.out.println("Correct Entry " + word);
+    }
+    
+}

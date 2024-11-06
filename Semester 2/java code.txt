@@ -1,0 +1,147 @@
+
+package inheritance.code;
+import java.util.Scanner;
+class A{
+    int x,y;
+    void adddata( int x1, int y1)
+    {
+        x=x1;
+        y=y1;
+    }
+    int add(){
+       
+      
+       
+         return( x+y );
+    }
+}
+class B extends A{
+    int mul()
+    {
+        return (x*y);
+    }
+    
+}
+
+
+
+public class InheritanceCode {
+private static Scanner scanner = new Scanner ( System.in );
+    
+    public static void main(String[] args) {
+       int add,mul;
+        B access = new B();
+        
+        
+       System.out.println("Enter value");
+        access.x= scanner.nextInt();
+       access. y= scanner.nextInt(); 
+         add= access.add();
+        mul= access.mul();
+        
+       
+        System.out.println(" Addition "+ add + " Multiplaction "+ mul );
+        
+        
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+package multiple.inheritance;
+import java.util.Scanner;
+class A{
+    int x,y,z;
+    void showdetails( int value1, int value2, int value3 )
+    {
+        x=value1;
+        y=value2;
+        z=value3;
+    }
+    int add()
+    {
+        return(x+y+z);
+    }
+}
+
+class B extends A{
+    int mul()
+    {
+       return(x*y*z); 
+    }
+}
+
+class C extends A{
+    int sub()
+    {
+       return(x-y-z);   
+    }
+}
+
+class D extends A{
+    int div()
+    {
+       return(x/y/z); 
+    }
+
+    int sub() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+
+public class MultipleInheritance {
+private static Scanner scanner = new Scanner ( System.in );
+    
+    
+    public static void main(String[] args) {
+        int mul,sub,add,div;
+        B access = new B();
+        C access1 = new C();
+        D access2=new D();
+       
+       add=access.add();
+       System.out.println("enter value");
+       access.x=scanner.nextInt();
+       access.y=scanner.nextInt();
+       access.z=scanner.nextInt();
+       System.out.println("show addition"+add);
+       
+       mul=access.mul();
+        System.out.println("enter value");
+       access1.x=scanner.nextInt();
+       access1.y=scanner.nextInt();
+       access1.z=scanner.nextInt();
+       System.out.println("show addition"+mul);
+       
+       sub=access2.sub();
+        System.out.println("enter value");
+       access2.x=scanner.nextInt();
+       access2.y=scanner.nextInt();
+       access2.z=scanner.nextInt();
+       System.out.println("show addition"+sub);
+       
+       
+       
+        System.out.println("enter value");
+       access1.x=scanner.nextInt();
+       access1.y=scanner.nextInt();
+       access1.z=scanner.nextInt();
+       System.out.println("show addition"+mul);
+       
+        
+        
+        
+       
+    }
+    
+}

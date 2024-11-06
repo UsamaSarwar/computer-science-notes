@@ -1,0 +1,59 @@
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a;
+      float b;
+      String s;
+      
+      Scanner i = new Scanner(System.in);
+            System.out.println("Enter a string");
+      s = i.nextLine();
+            System.out.println("Enter an integer");
+      a = i.nextInt();
+            System.out.println("Enter a float");
+      b = i.nextFloat();
+      
+      System.out.println("You entered string "+s);
+      System.out.println("You entered integer "+a);
+      System.out.println("You entered float "+b);
+    
+
+    }
+    
+}
+
+
+
+===============================================================================
+package javaapplication4;
+import java.util.Scanner;
+
+public class Usman {
+
+   
+    public static void main(String[] args) {
+              
+        int a,b,c;
+
+      
+      Scanner i = new Scanner(System.in);
+
+            System.out.println("Enter an integer");
+      a = i.nextInt();
+                  System.out.println("Enter an integer");
+      b = i.nextInt();
+
+      c=a+b;
+    
+      System.out.println("Sum is "+c);
+   
+    
+
+    }
+    
+}

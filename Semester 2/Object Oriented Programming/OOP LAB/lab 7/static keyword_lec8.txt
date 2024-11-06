@@ -1,0 +1,132 @@
+				Java Static Keyword
+				===================
+The static keyword in java is used for memory management mainly. We can apply java static keyword with variables, methods, blocks and nested class.
+A static variable is common to all the instances (or objects) of the class. In other words you can say that only a single copy of static variable is created and shared among all the objects of the class. Memory allocation for such variables only happens once when the class is loaded in the memory.
+---------------------------------------
+ Static variables in Java
+--------------------------------------
+class VariableDemo
+{
+   static int count=0;
+   public void increment()
+   {
+       count++;
+   }
+   public static void main(String args[])
+   {
+       VariableDemo obj1=new VariableDemo();
+       VariableDemo obj2=new VariableDemo();
+       obj1.increment();
+       obj2.increment();
+       System.out.println("Obj1: count is="+obj1.count);
+       System.out.println("Obj2: count is="+obj2.count);
+   }
+}
+=================================================================
+Static Variable can be accessed directly in a static method
+=================================================================
+class JavaExample{
+  static int age;
+  static String name;
+  //This is a Static Method
+  static void disp(){
+      System.out.println("Age is: "+age);
+      System.out.println("Name is: "+name);
+  }
+  // This is also a static method
+  public static void main(String args[]) 
+  {
+	  age = 30;
+	  name = "Steve";
+      disp();
+  }
+}
+=====================================================================
+Create a Simple Static method with a Constructor in Java
+---------------------------------------------------------
+public class Static_Ex1 {
+ 
+	static {
+		
+		System.out.println("The Static");
+	}
+	
+	Static_Ex1() {
+		
+		System.out.println("The Constructor");
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		new Static_Ex1();
+	}
+}
+
+------------------------------------------------------------
+Differentiate Static method with a normal method in Java
+------------------------------------------------------------
+public class Static_Ex2 {
+ 
+	static {
+		
+		System.out.println("The Static");
+	}
+	
+	Static_Ex2() {
+		
+		System.out.println("The Constructor");
+	}
+	
+	void Method() {
+		
+		System.out.println("The Method");
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		Static_Ex2 obj = new Static_Ex2();
+		
+		obj.Method();
+	}
+}
+------------------------------------------------------------------------
+Create Multiple Static methods in Java
+----------------------------------------------
+public class Static_Ex3 {
+ 
+	static {
+		
+		System.out.println("The Static");
+	}
+	
+	Static_Ex3() {
+		
+		System.out.println("The Constructor");
+	}
+	
+	void Method() {
+		
+		System.out.println("The Method");
+	}
+}
+ 
+class MainClass {
+	
+	static {
+		
+		System.out.println("The MainClass Static");
+	}
+	
+	public static void main(String args[]) {
+		
+		Static_Ex3 obj = new Static_Ex3();
+		
+		obj.Method();
+	}
+}

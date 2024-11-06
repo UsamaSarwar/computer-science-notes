@@ -1,0 +1,115 @@
+// File UcException.java
+public class UcException {
+public static void main (String args[ ]) {
+System.out.println(args[0]);
+}
+}
+.............................................................................................
+// File UcException.java
+public class UcException {
+public static void main (String args[ ]) {
+try {
+System.out.println(args[0]);
+catch (IndexOutOfBoundsException ex) {
+System.out.println(“You forget to pass command line argument”);
+}
+}
+...................................................................................................
+// File CException.java
+import java.io.* ;
+public class CException {
+public static void main (String args[ ]) {
+FileReader fr = new FileReader (“input.txt”);
+BufferedReader br = new BufferedReader (fr);
+//read the line form file
+String line = br.readLine();
+System.out.println(line); }
+}
+............................................................................................
+// File CException.java
+import java.io.* ;
+public class CException {
+public static void main (String args[ ]) {
+try{
+FileReader fr = new FileReader (“input.txt”);
+BufferedReader br = new BufferedReader (fr);
+//read the line form file
+String line = br.readLine();
+System.out.println(line); }
+catch( IOException ex) {
+System.out.println(ex);
+}
+}
+}
+....................................................................................................
+// File FBlockDemo.java (finally)
+import java.io.* ;
+public class FBlockDemo {
+public static void main (String args[ ])
+{
+try{
+FileReader fr = new FileReader (“strings.txt”);
+BufferedReader br = new BufferedReader (fr);
+//read the line form file
+String line = br.readLine();
+System.out.println(line); }catch( IOException ex) {
+System.out.println(ex);
+}
+finally {
+System.out.println(“finally block always execute”);
+}
+}
+}
+................................................................................................
+Task Perform yourself
+...............................................................................................
+// File MCatchDemo.java
+import java.io.* ;
+public class MCatchDemo {
+public static void main (String args[ ]) {
+try{
+// can throw FileNotFound or IOException
+FileReader fr = new FileReader (“numbers.txt”);
+BufferedReader br = new BufferedReader (fr);
+//read the number form file
+String s = br.readLine();
+//may throws NumberFormatException, if s is not a no.
+int number = Integer.parseInt(s);
+System.out.println(number * number); }
+catch( NumberFormatException nfEx) {
+System.out.println(nfEx);
+}
+catch( FileNotFoundException fnfEx) {
+System.out.println(fnfEx);
+}
+catch( IOException ioEx) {
+System.out.println(ioEx);
+}
+}
+}
+.........................................................................................................
+// File ThrowsDemo.java
+import java.io.* ;
+public class ThrowsDemo {
+// contains file reading code
+public static void method2( ) {
+try{
+FileReader fr = new FileReader (“strings.txt”);
+BufferedReader br = new BufferedReader (fr);
+//read the line form file
+String s = br.readLine();
+System.out.println(s);
+}
+catch( IOException ioEx) {
+ioEx.printStackTrace(); }
+}// end method 2
+//only calling method2
+public static void method1( )
+{
+method2();
+}
+public static void main (String args[ ]) {
+ThrowsDemo.method1();
+}
+}
+..........................................................................................................

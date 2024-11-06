@@ -1,0 +1,80 @@
+/*
+Qno.8.Write a Java Program that input three numbers from the 
+user and find out whether these numbers are Equal or Different 
+using Nested If statement.
+*/
+package task2_1;
+import java.util.Scanner;
+public class Task2_1 
+{
+    public static void main(String[] args) 
+    {
+        int ta;
+        do
+        {
+        int a,b,c;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("\n\nEnter 3 Numbers, this program will tell you about the gteatest integer ");
+        System.out.print("First Number: ");                a=scan.nextInt();
+        System.out.print("Second Number: ");               b=scan.nextInt();
+        System.out.print("Third Number: ");                c=scan.nextInt();
+        if (a>=b)
+        {
+            if(a>b)
+            {
+                System.out.print("\nGreatest integer is: ");
+                if (b>c)
+                {
+                    System.out.print(a);
+                }
+                else if (b<c)
+                {
+                    if(a==c)
+                    {
+                        System.out.print(a);
+                    }
+                    else
+                    {
+                        System.out.print(b);
+                    }
+                } 
+                else
+                {
+                    System.out.print(c);
+                }
+            }
+            else if (a==b)
+            {
+                if(b==c)
+                {
+                    System.out.println("All numbers are equal!");
+                }
+                else if(b<c)
+                {
+                    System.out.println("\nGreatest integer is: "+c);
+                }
+                else
+                {
+                    System.out.println("\nGreatest integer is: "+a);
+                }
+            }
+        }
+        else 
+        {
+            if(b>c)
+            {
+                System.out.print("\nGreatest Number is: ");
+                System.out.print(b);
+            }
+            else
+            {
+                System.out.print("\nGreatest Number is: ");
+                System.out.print(c);
+            }
+        }
+            System.out.print("\nPress 0 to terminate else run again: ");
+            ta=scan.nextInt();
+        }
+        while(ta!=0);
+    }
+}

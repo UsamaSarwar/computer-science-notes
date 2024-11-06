@@ -1,0 +1,61 @@
+package student;
+import javax.swing.JButton;  
+import javax.swing.JFrame; 
+public class Student  {
+
+    public static void main(String[] args) {
+
+	 JFrame frame=new JFrame(); 
+         JButton b=new JButton("Click Me..");
+          b.setBounds(30,90,90, 30);  
+             
+        //Adding button onto the frame
+        frame.add(b);  
+                  
+        // Setting Frame size. This is the window size
+        frame.setSize(500,800);  
+        
+        frame.setLayout(null);  
+        frame.setVisible(true);  
+                  
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+    }}
+=============================================================================================
+import javax.swing.*;  
+class LabelExample  
+{  
+public static void main(String args[])  
+    {  
+    JFrame f= new JFrame("Label Example");  
+    JLabel l1,l2;  
+    l1=new JLabel("First Label.");  
+    l1.setBounds(50,50, 100,30);  
+    l2=new JLabel("Second Label.");  
+    l2.setBounds(50,100, 100,30);  
+    f.add(l1); f.add(l2);  
+    f.setSize(300,300);  
+    f.setLayout(null);  
+    f.setVisible(true);  
+    }  
+    } 
+==========================================================================================
+import javax.swing.*;    
+public class TableExample {    
+    JFrame f;    
+    TableExample(){    
+    f=new JFrame();    
+    String data[][]={ {"101","Amit","670000"},    
+                          {"102","Jai","780000"},    
+                          {"101","Sachin","700000"}};    
+    String column[]={"ID","NAME","SALARY"};         
+    JTable jt=new JTable(data,column);    
+    jt.setBounds(30,40,200,300);          
+    JScrollPane sp=new JScrollPane(jt);    
+    f.add(sp);          
+    f.setSize(300,400);    
+    f.setVisible(true);    
+}     
+public static void main(String[] args) {    
+    new TableExample();    
+}    
+} 

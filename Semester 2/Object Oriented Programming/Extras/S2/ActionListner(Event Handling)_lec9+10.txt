@@ -1,0 +1,250 @@
+Java AWT TextField Example with ActionListener
+==================================================
+
+import java.awt.*;  
+import java.awt.event.*;  
+public class TextFieldExample extends Frame implements ActionListener{  
+    TextField tf1,tf2,tf3;  
+    Button b1,b2;  
+    TextFieldExample(){  
+        tf1=new TextField();  
+        tf1.setBounds(50,50,150,20);  
+        tf2=new TextField();  
+        tf2.setBounds(50,100,150,20);  
+        tf3=new TextField();  
+        tf3.setBounds(50,150,150,20);  
+        tf3.setEditable(false);   
+        b1=new Button("+");  
+        b1.setBounds(50,200,50,50);  
+        b2=new Button("-");  
+        b2.setBounds(120,200,50,50);  
+        b1.addActionListener(this);  
+        b2.addActionListener(this);  
+        add(tf1);add(tf2);add(tf3);add(b1);add(b2);  
+        setSize(300,300);  
+        setLayout(null);  
+        setVisible(true);  
+    }         
+    public void actionPerformed(ActionEvent e) {  
+        String s1=tf1.getText();  
+        String s2=tf2.getText();  
+        int a=Integer.parseInt(s1);  
+        int b=Integer.parseInt(s2);  
+        int c=0;  
+        if(e.getSource()==b1){  
+            c=a+b;  
+        }else if(e.getSource()==b2){  
+            c=a-b;  
+        }  
+        String result=String.valueOf(c);  
+        tf3.setText(result);  
+    }  
+public static void main(String[] args) {  
+    new TextFieldExample();  
+}  
+} 
+
+====================================================================
+Java AWT TextArea Example with ActionListener
+====================================================================
+
+import java.awt.*;  
+import java.awt.event.*;  
+public class TextAreaExample extends Frame implements ActionListener{  
+Label l1,l2;  
+TextArea area;  
+Button b;  
+TextAreaExample(){  
+    l1=new Label();  
+    l1.setBounds(50,50,100,30);  
+    l2=new Label();  
+    l2.setBounds(160,50,100,30);  
+    area=new TextArea();  
+    area.setBounds(20,100,300,300);  
+    b=new Button("Count Words");  
+    b.setBounds(100,400,100,30);  
+    b.addActionListener(this);  
+    add(l1);add(l2);add(area);add(b);  
+    setSize(400,450);  
+    setLayout(null);  
+    setVisible(true);  
+}  
+public void actionPerformed(ActionEvent e){  
+    String text=area.getText();  
+    String words[]=text.split("\\s");  
+    l1.setText("Words: "+words.length);  
+    l2.setText("Characters: "+text.length());  
+}  
+public static void main(String[] args) {  
+    new TextAreaExample();  
+}  
+} 
+=======================================================================
+Java AWT Checkbox Example with ItemListener
+=======================================================================
+
+
+package javaapplication34;
+import java.awt.*;  
+import java.awt.event.*;
+
+public class JavaApplication34  
+{   JavaApplication34(){  
+        Frame f= new Frame("CheckBox Example");  
+        final Label label = new Label();          
+        label.setAlignment(Label.CENTER);  
+        label.setSize(400,100);  
+        Checkbox checkbox1 = new Checkbox("C++");  
+        checkbox1.setBounds(100,100, 50,50);  
+        Checkbox checkbox2 = new Checkbox("Java");  
+        checkbox2.setBounds(100,150, 50,50);  
+        f.add(checkbox1); f.add(checkbox2); f.add(label); 
+ 
+        checkbox1.addItemListener(new ItemListener() {  
+            public void itemStateChanged(ItemEvent e) {               
+               label.setText("C++ checkbox: Checked");  
+            }  
+         });  
+        checkbox2.addItemListener(new ItemListener() {  
+            public void itemStateChanged(ItemEvent e) {               
+               label.setText("Java checkbox: Checked");  
+            }  
+         });  
+        f.setSize(400,400);  
+        f.setLayout(null);  
+        f.setVisible(true);  
+     }  
+public static void main(String args[])  
+{  
+    new JavaApplication34();  
+}  
+} 
+==============================================================================
+Java AWT Choice Example with ActionListener
+==============================================================================
+
+import java.awt.*;  
+import java.awt.event.*;  
+public class ChoiceExample  
+{  
+        ChoiceExample(){  
+        Frame f= new Frame();  
+        final Label label = new Label();          
+        label.setAlignment(Label.CENTER);  
+        label.setSize(400,100);  
+        Button b=new Button("Show");  
+        b.setBounds(200,100,50,20);  
+        final Choice c=new Choice();  
+        c.setBounds(100,100, 75,75);  
+        c.add("C");  
+        c.add("C++");  
+        c.add("Java");  
+        c.add("PHP");  
+        c.add("Android");  
+        f.add(c);f.add(label); f.add(b);  
+        f.setSize(400,400);  
+        f.setLayout(null);  
+        f.setVisible(true);  
+        b.addActionListener(new ActionListener() {  
+            public void actionPerformed(ActionEvent e) {       
+         String data = "Programming language Selected: "+ c.getItem(c.getSelectedIndex());  
+         label.setText(data);  
+        }  
+        });           
+        }  
+public static void main(String args[])  
+{  
+   new ChoiceExample();  
+}  
+}  
+==================================================================
+Java AWT MenuItem and Menu Example
+
+import java.awt.*;  
+class MenuExample  
+{  
+     MenuExample(){  
+         Frame f= new Frame("Menu and MenuItem Example");  
+         MenuBar mb=new MenuBar();  
+         Menu menu=new Menu("Menu");  
+         Menu submenu=new Menu("Sub Menu");  
+         MenuItem i1=new MenuItem("Item 1");  
+         MenuItem i2=new MenuItem("Item 2");  
+         MenuItem i3=new MenuItem("Item 3");  
+         MenuItem i4=new MenuItem("Item 4");  
+         MenuItem i5=new MenuItem("Item 5");  
+         menu.add(i1);  
+         menu.add(i2);  
+         menu.add(i3);  
+         submenu.add(i4);  
+         submenu.add(i5);  
+         menu.add(submenu);  
+         mb.add(menu);  
+         f.setMenuBar(mb);  
+         f.setSize(400,400);  
+         f.setLayout(null);  
+         f.setVisible(true);  
+}  
+public static void main(String args[])  
+{  
+new MenuExample();  
+}  
+}  
+==========================================================================
+sound using Java ActionListner
+========================================================================
+
+package javaapplication34;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.Toolkit;
+import java.awt.event.*;  
+
+
+public class JavaApplication34  
+{
+    public static void main(String[] args) {  
+  Frame f=new Frame("ToolkitExample");  
+    Button b=new Button("beep");  
+    b.setBounds(50,100,60,30);  
+    f.add(b);     
+    f.setSize(300,300);  
+    f.setLayout(null);  
+    f.setVisible(true);  
+    b.addActionListener(new ActionListener(){  
+        public void actionPerformed(ActionEvent e){  
+            Toolkit.getDefaultToolkit().beep();  
+        }  
+    });       
+}  
+==============================================================================
+Java MouseMotionListener Example
+==============================================================================
+package javaapplication34;
+import java.awt.*;  
+import java.awt.event.*;
+/**
+ *
+ * @author Usman Ali
+ */
+public class JavaApplication34  extends Frame implements MouseMotionListener{  
+    JavaApplication34 (){  
+        addMouseMotionListener(this);  
+          
+        setSize(300,300);  
+        setLayout(null);  
+        setVisible(true);  
+    }  
+public void mouseDragged(MouseEvent e) {  
+    Graphics g=getGraphics();  
+    g.setColor(Color.BLUE);  
+    g.fillOval(e.getX(),e.getY(),20,20);  
+}  
+public void mouseMoved(MouseEvent e) {}  
+  
+public static void main(String[] args) {  
+    new JavaApplication34 ();  
+}  
+}  
+} 
+ 

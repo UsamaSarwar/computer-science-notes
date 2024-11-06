@@ -1,0 +1,127 @@
+package javaapplication22;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField; 
+
+public class JavaApplication22 {
+
+    public static void main(String[] args) {
+        
+         JFrame frame = new JFrame("My First Swing Example");
+       
+        frame.setSize(350, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel panel = new JPanel();    
+        frame.add(panel);
+        placeComponents(panel);
+        frame.setVisible(true);
+    }
+ public static void placeComponents(JPanel panel) {
+
+        panel.setLayout(null);
+
+        JLabel userLabel = new JLabel("User");
+        userLabel.setBounds(10,20,80,25);
+        panel.add(userLabel);
+
+        JTextField userText = new JTextField(20);
+        userText.setBounds(100,20,165,25);
+        panel.add(userText);
+
+        JLabel passwordLabel = new JLabel("Password");
+        passwordLabel.setBounds(10,50,80,25);
+        panel.add(passwordLabel);
+
+        JPasswordField passwordText = new JPasswordField(20);
+        passwordText.setBounds(100,50,165,25);
+        panel.add(passwordText);
+
+        JButton loginButton = new JButton("login");
+        loginButton.setBounds(10, 80, 80, 25);
+        panel.add(loginButton);
+    }
+
+}
+=======================================================================
+import java.awt.*;  
+import javax.swing.*;  
+public class PanelExample {  
+     PanelExample()  
+        {  
+        JFrame f= new JFrame("Panel Example");    
+        JPanel panel=new JPanel();  
+        panel.setBounds(40,80,200,200);    
+        panel.setBackground(Color.gray);  
+        JButton b1=new JButton("Button 1");     
+        b1.setBounds(50,100,80,30);    
+        b1.setBackground(Color.yellow);   
+        JButton b2=new JButton("Button 2");   
+        b2.setBounds(100,100,80,30);    
+        b2.setBackground(Color.green);   
+        panel.add(b1); panel.add(b2);  
+        f.add(panel);  
+                f.setSize(400,400);    
+                f.setLayout(null);    
+                f.setVisible(true);    
+        }  
+        public static void main(String args[])  
+        {  
+        new PanelExample();  
+        }  
+    }  
+=========================================================================
+package javaapplication22;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+public class JavaApplication22 {
+
+    public static void main(String[] args) {
+        
+      JFrame frame = new JFrame();
+  ImageIcon icon = new ImageIcon("C:\\Users\\Pavilion\\Desktop\\sani.jpg");
+  JLabel label = new JLabel(icon);
+  frame.add(label);
+  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  frame.pack();
+  frame.setVisible(true);
+ }
+}  
+===========================================================================
+TASK perform itself...
+===========================================================================
+
+package javaapplication22;
+import java.awt.BorderLayout;
+import java.awt.Container;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class JavaApplication22 {
+
+    public static void main(String[] args) {
+        
+       JFrame frame = new JFrame("BorderLayoutDemo - Beginnersbook.com");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    Container container = frame.getContentPane();
+
+  
+    container.add(new JButton("PAGE_START"), BorderLayout.PAGE_START);
+    container.add(new JButton("PAGE_END"), BorderLayout.PAGE_END);
+    container.add(new JButton("LINE_START"), BorderLayout.LINE_START);
+    container.add(new JButton("LINE_END"), BorderLayout.LINE_END);
+    container.add(new JButton("CENTER"), BorderLayout.CENTER);
+
+    //pack() method calculates and assign appropriate size for frame
+    frame.pack();
+ 
+ 
+    frame.setVisible(true);
+  }
+} 
+============================================================================================
+    

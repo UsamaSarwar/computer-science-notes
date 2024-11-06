@@ -1,0 +1,45 @@
+package lab1;
+
+class teacher 
+{
+    int id;
+    String  name;
+    long cnic;
+    char gender;
+    // Function for Insertion
+    void insertion(int i, String n,long c,char g)
+    {
+        id=i;
+        name=n;
+        cnic=c;
+        gender=g;    
+    }
+    // Function for Display
+    void Display()
+    {        
+        System.out.println("\nID: "+id+"\nName: "+name+"\nCNIC: "+cnic+"\nGender: "+gender);
+        //cout<<"ID: "<<id<<"\nName: "<<name<<
+    }      
+}
+public class Lab1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+
+        teacher t1= new teacher();
+        teacher t2= new teacher();
+        
+        t1.insertion(672, "Usama Sarwar", 381034513, 'M');
+        t1.Display();;
+        
+        t1.insertion(671, "Amna Usama", 7682645, 'F');
+        t1.Display();
+        
+        
+        // TODO code application logic here
+    }
+    
+}

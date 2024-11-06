@@ -1,0 +1,244 @@
+
+package pkgtry;
+
+
+import javax.swing.*;
+
+
+
+
+public class Try {
+	
+public static void main(String[] args) {
+   
+
+              
+       
+        String a,b,c;
+
+    a= JOptionPane.showInputDialog("Enter 1st number: ");
+    int x = Integer.parseInt(a);
+    
+    b= JOptionPane.showInputDialog("Enter 2nd number ");
+    int y = Integer.parseInt(b);
+      
+ c= JOptionPane.showInputDialog("Enter 2nd number ");
+    int z = Integer.parseInt(c);
+
+
+
+if(x==y)
+ { if(x==z)
+     {JOptionPane.showMessageDialog(null,"Numbers are Equal");}
+     else
+     {JOptionPane.showMessageDialog(null,"Numbers are Different");}
+ }
+ else
+  { JOptionPane.showMessageDialog(null,"Numbers are Different");
+  }
+
+    
+
+    }
+   
+}
+=======================================================================
+
+package pkgtry;
+
+
+import javax.swing.*;
+
+
+
+
+public class Try {
+	
+public static void main(String[] args) {
+   
+
+              
+       
+        String a,b,c;
+
+    a= JOptionPane.showInputDialog("Enter 1st number: ");
+    int x = Integer.parseInt(a);
+    
+    b= JOptionPane.showInputDialog("Enter 2nd number ");
+    int y = Integer.parseInt(b);
+      
+ c= JOptionPane.showInputDialog("Enter 2nd number ");
+    int z = Integer.parseInt(c);
+
+
+
+if((x>y && x>z))
+
+     {JOptionPane.showMessageDialog(null,"Maximum number is " + x);}
+else if(y>x && y>z)
+  
+     {JOptionPane.showMessageDialog(null,"Maximum number is " + y);}
+ 
+ else
+  { JOptionPane.showMessageDialog(null,"Maximum number is " + z);
+  }
+
+    
+
+    }
+   
+}
+=====================================================================
+Help about JFrames:
+
+//default title and icon
+JOptionPane.showMessageDialog(frame,
+    "Eggs are not supposed to be green.");
+--------------------------------------------------------------------
+//custom title, warning icon
+JOptionPane.showMessageDialog(frame,
+    "Eggs are not supposed to be green.",
+    "Inane warning",
+    JOptionPane.WARNING_MESSAGE);
+---------------------------------------------------------------------
+//custom title, error icon
+JOptionPane.showMessageDialog(frame,
+    "Eggs are not supposed to be green.",
+    "Inane error",
+    JOptionPane.ERROR_MESSAGE);
+--------------------------------------------------------------------
+//custom title, no icon
+JOptionPane.showMessageDialog(frame,
+    "Eggs are not supposed to be green.",
+    "A plain message",
+    JOptionPane.PLAIN_MESSAGE);
+======================================================================
+
+package pkgtry;
+import javax.swing.JFrame;
+import javax.swing.*;
+public class Try {
+public static void main(String[] args) {
+  JFrame f = new JFrame("");
+  String  operand1;
+
+  
+    operand1= JOptionPane.showInputDialog("Enter radius of circle: ");
+    double a = Double.parseDouble(operand1);
+    
+      String choice = JOptionPane.showInputDialog("Enter 1  for  Area, 2 for circumference");
+  int ch = Integer.parseInt(choice);
+  if(ch==1)
+  {
+
+ double c=3.14*a*a;
+ JOptionPane.showMessageDialog(null,"Area of Circle " +c);
+ 
+                    
+  } 
+  else if(ch==2)
+  {
+      double m=2*3.14*a;
+       JOptionPane.showMessageDialog(null, "Circumference of Circle " +m);
+  }
+
+else
+  {
+      JOptionPane.showMessageDialog(f,"Invalid","Error",JOptionPane.WARNING_MESSAGE);
+  }
+}
+}
+=====================================================================
+package pkgtry;
+
+
+import javax.swing.*;
+
+import javax.swing.JFrame;
+
+public class Try {
+	
+public static void main(String[] args) {
+    JFrame frame = new JFrame("JOptionPane showMessageDialog example");
+  String  operand1;
+
+  
+    operand1= JOptionPane.showInputDialog("Enter radius of circle: ");
+    double a = Double.parseDouble(operand1);
+    
+      String choice = JOptionPane.showInputDialog("Enter 1  for  Area, 2 for circumference");
+  int ch = Integer.parseInt(choice);
+  if(ch==1)
+  {
+
+ double c=3.14*a*a;
+ JOptionPane.showMessageDialog(null, c);
+ 
+                    
+  } 
+  else if(ch==2)
+  {
+      double m=2*3.14*a;
+       JOptionPane.showMessageDialog(null, m);
+  }
+
+else
+  {
+      JOptionPane.showMessageDialog(frame,
+    "Invalid",
+    "error",
+    JOptionPane.ERROR_MESSAGE);
+  }
+}
+}
+====================================================================
+
+package pkgtry;
+
+
+
+import javax.swing.*;
+
+import javax.swing.JFrame;
+
+
+
+
+public class Try {
+	
+public static void main(String[] args) {
+    JFrame f = new JFrame("");
+    
+String a = JOptionPane.showInputDialog("Press  {  for Simple Message JFrame.... Press  )  for Warning Message.... Press  ,  for Error Message.... Press  ;  for Plain Message");
+    switch (a) {
+        case "{":
+            JOptionPane.showMessageDialog(f,
+                    "Simple Message");
+            break;
+        case ")":
+            JOptionPane.showMessageDialog(f,
+                    "Java",
+                    "Warning Message",
+                    JOptionPane.WARNING_MESSAGE);
+            break;
+              case ",":
+            JOptionPane.showMessageDialog(f,
+                    "Java",
+                    "Error Message",
+                    JOptionPane.ERROR_MESSAGE);
+            break;
+                    case ";":
+            JOptionPane.showMessageDialog(f,
+                    "Java",
+                    "Warning Message",
+                    JOptionPane.PLAIN_MESSAGE);
+            break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Plz Enter Correct Option");
+    }
+}
+}
+
+
+
+

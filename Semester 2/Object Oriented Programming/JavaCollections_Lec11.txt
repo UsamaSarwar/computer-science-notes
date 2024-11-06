@@ -1,0 +1,944 @@
+  
+Java Collections includes 
+->ArrayList
+->Stack
+->LinkedList
+->Queue                                            
+
+						Java ArrayList
+
+                                  ===========================================
+
+Create an Integer ArrayList in Java
+---------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex1 {
+ 
+	ArrayList<Integer> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<Integer>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (Integer) - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.nextInt());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex1 obj = new ArrayList_Ex1();
+		
+		obj.getVal();
+		obj.display();
+	}
+}
+---------------------------------------------------------------------------------------
+Create a Float ArrayList in Java
+------------------------------------------------------------------------------------
+
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex2 {
+ 
+	ArrayList<Float> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<Float>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (Float) - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.nextFloat());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex2 obj = new ArrayList_Ex2();
+		
+		obj.getVal();
+		obj.display();
+	}
+}
+---------------------------------------------------------------------------
+Create a Double ArrayList in Java
+--------------------------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex3 {
+ 
+	ArrayList<Double> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<Double>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (Double) - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.nextDouble());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex3 obj = new ArrayList_Ex3();
+		
+		obj.getVal();
+		obj.display();
+	}
+}
+-------------------------------------------------------------------
+Create a Boolean ArrayList in Java
+------------------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex4 {
+ 
+	ArrayList<Boolean> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<Boolean>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (Boolean) - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.nextBoolean());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex4 obj = new ArrayList_Ex4();
+		
+		obj.getVal();
+		obj.display();
+	}
+}
+------------------------------------------------------------------
+Create a String ArrayList in Java
+-----------------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex5 {
+ 
+	ArrayList<String> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<String>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (String) - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.next());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex5 obj = new ArrayList_Ex5();
+		
+		obj.getVal();
+		obj.display();
+	}
+}
+----------------------------------------------------------------
+Insert a data into ArrayList in Java
+---------------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex6 {
+ 
+	ArrayList<String> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<String>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (String) - Insert a data");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.next());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+	
+	void insert() {
+		
+		System.out.println("\nEnter the index :");
+		int i = scan.nextInt();
+		
+		System.out.println("Enter the data :");
+		String item = scan.next();
+		
+		list.add(i, item);
+		
+		display();
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex6 obj = new ArrayList_Ex6();
+		
+		obj.getVal();
+		obj.display();
+		
+		obj.insert();
+	}
+}
+-----------------------------------------------------------
+Delete a data in ArrayList in Java
+-----------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex7 {
+ 
+	ArrayList<String> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<String>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (String) - Delete a data");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.next());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+	
+	void delete() {
+		
+		System.out.println("\nEnter the index :");
+		int i = scan.nextInt();
+ 
+		list.remove(i);
+		
+		display();
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex7 obj = new ArrayList_Ex7();
+		
+		obj.getVal();
+		obj.display();
+		
+		obj.delete();
+	}
+}
+------------------------------------------------------
+Delete All data in ArrayList in Java
+------------------------------------------------------
+import java.util.ArrayList;
+import java.util.Scanner;
+ 
+public class ArrayList_Ex8 {
+ 
+	ArrayList<String> list;
+	Scanner scan;
+	
+	int n;
+	
+	void getVal() {
+		
+		list =  new ArrayList<String>();
+		scan = new Scanner(System.in);
+		
+		System.out.println("ArrayList (String) - Delete All");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Enter the data :");
+		
+		for(int i=0; i<n; i++) {
+			
+			list.add(scan.next());
+		}		
+	}
+	
+	void display() {
+		
+		System.out.println("\nThe ArrayList");
+		
+		if(list.isEmpty()) {
+			
+			System.out.println("ArrayList is Empty..");
+		}		
+		else {
+			
+			for(int i=0; i<list.size(); i++) {
+				
+				System.out.println(list.get(i));
+			}
+		}
+	}
+	
+	void delete() {
+		
+		System.out.println("\nDo you want to delete all ? (y/n)");
+		String result = scan.next(); 
+ 
+		if(result.equalsIgnoreCase("y"))
+			list.clear();
+		
+		display();
+	}
+}
+ 
+class MainClass {
+	
+	public static void main(String args[]) {
+		
+		ArrayList_Ex8 obj = new ArrayList_Ex8();
+		
+		obj.getVal();
+		obj.display();
+		
+		obj.delete();
+	}
+}
+-----------------------------------------------------------------------------
+Home Task>>>>>>>> How to search an Element from an ArrayList in Java
+-----------------------------------------------------------------------------
+
+				========================================
+
+					Java Stack....LIFO
+				========================================
+
+stack....Insert an Element
+==============================================
+
+
+import java.util.Stack;
+
+public class MainClass {
+  public static void main (String args[]) {
+    Stack s = new Stack();
+    s.push("A");
+    s.push("B");
+    s.push("C");
+
+    System.out.println(s);
+  }}
+=================================================
+stack....Remove an Element
+=================================================
+import java.util.Stack;
+
+public class MainClass {
+  public static void main (String args[]) {
+    Stack s = new Stack();
+    s.push("A");
+    s.push("B");
+    s.push("C");
+
+    System.out.println(s.pop());
+
+  }
+}
+========================================================
+if size of stack is zero then return True... is.empty()
+========================================================
+import java.util.Stack;
+
+public class MainClass {
+  public static void main (String args[]) {
+    Stack s = new Stack();
+    s.push("A");
+    s.push("B");
+    s.push("C");
+
+    System.out.println(s.pop());
+    System.out.println(s.empty());
+  }
+}
+=========================================================
+Peek () method in Stack
+=========================================================
+import java.util.Stack;
+
+public class MainClass {
+  public static void main (String args[]) {
+    Stack s = new Stack();
+    s.push("A");
+    s.push("B");
+    s.push("C");
+
+    System.out.println("Next: " + s.peek());
+  }
+}
+===========================================================
+Search an Element in Stack
+===========================================================
+import java.util.Stack;
+
+public class MainClass {
+  public static void main (String args[]) {
+    Stack s = new Stack();
+    s.push("A");
+    s.push("B");
+    s.push("C");
+
+    System.out.println("Next: " + s.peek());
+    s.push("D");
+
+    System.out.println(s.pop());
+    s.push("E");
+    s.push("F");
+
+    int count = s.search("E");
+    while (count != -1 && count > 1) {
+      s.pop();
+      count--;
+    }
+    System.out.println(s);
+  }
+}
+====================================================================
+
+				========================================
+
+					Java Linked List
+				========================================
+===============================================================
+Creation & Insertion of LinkedList in Java
+==============================================================
+package test1;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Test1 {
+
+    public static void main(String[] args) {
+        LinkedList <String> list;
+	int n,p;
+        Scanner s = new Scanner(System.in);
+		list = new LinkedList<>();
+                System.out.println("Linked List - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value");
+		n = s.nextInt();
+		
+		System.out.println("Enter the data");
+ 
+		for(int i=0; i<n; i++) {
+			
+			list.add(s.next());}
+                                
+                
+                System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));
+		}}}
+===================================================================
+AddFirst & RemoveLast Element - LinkedList in Java
+===================================================================
+package test1;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Test1 {
+
+    public static void main(String[] args) {
+        LinkedList <String> list;
+	int n,p;
+        Scanner s = new Scanner(System.in);
+		list = new LinkedList<>();
+                System.out.println("Linked List - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value");
+		n = s.nextInt();
+		
+		System.out.println("Enter the data");
+ 
+		for(int i=0; i<n; i++) {
+			
+			list.add(s.next());}
+                                
+                
+                System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));
+		}
+
+    System.out.println("\nAdd First");
+		System.out.println("Enter the data");
+		String item = s.next();
+		
+		list.addFirst(item);
+		
+		System.out.println("\nRemove Last");
+		
+		list.removeLast();
+                	
+		System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));
+		}
+	}}
+=======================================================================
+AddMiddle & RemoveMiddle - LinkedList in Java
+=======================================================================
+
+package test1;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Test1 {
+
+    public static void main(String[] args) {
+        LinkedList <String> list;
+	int n,p;
+        Scanner s = new Scanner(System.in);
+		list = new LinkedList<>();
+                System.out.println("Linked List - Create & Insert");
+		
+		System.out.println("\nEnter 'n' value");
+		n = s.nextInt();
+		
+		System.out.println("Enter the data");
+ 
+		for(int i=0; i<n; i++) {
+			
+			list.add(s.next());}
+                                
+                
+                System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));
+		}
+      
+      
+    
+            System.out.println("\nAdd Middle");
+
+        p = (list.size()) / 2;
+
+        System.out.println("Enter the data");
+        String item = s.next();
+
+        list.add(p, item);
+
+                	
+		System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));
+		}
+                
+                
+		
+		System.out.println("\nRemove Middle");
+				
+		list.remove(p);
+                		System.out.println("\nThe Linked List");
+ 
+		for(int i=0; i<list.size(); i++) {
+			
+			System.out.println(list.get(i));}
+	}}
+=======================================================================================
+
+				========================================
+
+					Java Queue....FIFO
+				========================================
+=================================================================================
+Queue-------Add, pool and peek methods (For Integer Data Type)
+=================================================================================
+package student;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+public class Student  {
+
+    public static void main(String[] args) {
+
+	Queue <Integer> q;
+	int n,p;
+        Scanner s = new Scanner(System.in);
+		q = new LinkedList<>();
+		
+		System.out.println("Integer Queue - Insert & Delete");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = s.nextInt();
+		
+		System.out.println("Enter the elements");
+
+		for(int i=0; i<n; i++) {
+                   p= s.nextInt();
+                    q.add(p);}
+			            //q.add(s.nextInt());
+                
+                System.out.println(q.peek());
+                System.out.println("\nThe Queue");
+		
+		while(!q.isEmpty()) {
+			System.out.println(q.poll());
+      }}}
+=================================================================================
+Queue-------Add, pool and peek methods (For Float Data Type)
+=================================================================================
+package student;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Student  {
+
+    public static void main(String[] args) {
+
+	Queue <Float> q;
+	
+	int n;
+        float p;
+        Scanner s = new Scanner(System.in);
+		q = new LinkedList<>();
+		
+		System.out.println("Float Queue - Insert & Delete");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = s.nextInt();
+		
+		System.out.println("Enter the elements");
+		
+               
+		for(int i=0; i<n; i++) {
+                   p= s.nextFloat();
+                    q.add(p);
+			
+			//q.add(s.nextInt());
+		}
+                
+                   System.out.println(q.peek());
+                System.out.println("\nThe Queue");
+		
+		while(!q.isEmpty()) {
+                      
+			
+			System.out.println(q.poll());
+                }}}
+=================================================================================
+Queue-------Add, pool and peek methods (For Boolean Data Type)
+=================================================================================
+
+package student;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Student  {
+
+    public static void main(String[] args) {
+
+	Queue <Boolean> q;
+	
+	int n;
+        boolean p;
+        Scanner s = new Scanner(System.in);
+		q = new LinkedList<>();
+		
+		System.out.println("Float Queue - Insert & Delete");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = s.nextInt();
+		
+		System.out.println("Enter the elements");
+		
+               
+		for(int i=0; i<n; i++) {
+                   p= s.nextBoolean();
+                    q.add(p);
+			
+			//q.add(s.nextInt());
+		}
+                
+                   System.out.println(q.peek());
+                System.out.println("\nThe Queue");
+		
+		while(!q.isEmpty()) {
+                      
+			
+			System.out.println(q.poll());
+                }}}
+=================================================================================
+Queue-------Add, pool and peek methods (For String Data Type)
+=================================================================================
+package student;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Student  {
+
+    public static void main(String[] args) {
+
+	Queue <String> q;
+	
+	int n;
+        String p;
+        Scanner s = new Scanner(System.in);
+		q = new LinkedList<>();
+		
+		System.out.println("Float Queue - Insert & Delete");
+		
+		System.out.println("\nEnter 'n' value :");
+		n = s.nextInt();
+		
+		System.out.println("Enter the elements");
+		
+               
+		for(int i=0; i<n; i++) {
+                   p= s.next();
+                    q.add(p);
+			
+			//q.add(s.nextInt());
+		}
+                
+                   System.out.println(q.peek());
+                System.out.println("\nThe Queue");
+		
+		while(!q.isEmpty()) {
+                      
+			
+			System.out.println(q.poll());
+                }}}
+=================================================================================================
