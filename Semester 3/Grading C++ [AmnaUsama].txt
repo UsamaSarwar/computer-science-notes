@@ -1,0 +1,51 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	double per;
+	char Grade;
+	char tryagain;
+	cout<<"< < < < < Grading Software > > > > >";
+	do{
+	cout<<"\n\nEnter your Percentage: ";
+	cin>>per;
+	if (per>=80 && per<100)
+	{
+		Grade='A';
+	}
+	else if(per>=70 && per <80)
+	{
+		Grade='B';
+	}
+	else if(per>=60 && per <70)
+	{
+		Grade='C';
+	}
+	else if(per>=50 && per <60)
+	{
+		Grade='D';
+	}
+	else if(per>=40 && per <50)
+	{
+		Grade='E';
+	}
+	else if(per>=0 && per <40)
+	{
+		Grade='F';
+		cout<<"You are Fail\n";
+	}
+	else
+	{
+		cout<<"Kindly Enter Percentage between (0-100)";
+	}
+	cout<<"Grade: "<<Grade;
+	cout<<"\n\nDo you want to use again? (y/n) \n";
+	cin>>tryagain;
+	}
+	while(tryagain=='Y' || tryagain== 'y' );
+	
+	cout<<"\nThanks for using our Grading System Software :)";
+	
+	getch();
+}
