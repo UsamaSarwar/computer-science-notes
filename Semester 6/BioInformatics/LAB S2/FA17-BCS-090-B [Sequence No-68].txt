@@ -1,0 +1,20 @@
+USAMA SARWAR
+FA17-BCS-090-B
+======================================================
+EXAM Sequence No: 68
+MNSLYTAEGVMDKHSLWQRYVPLVRHEALRLQVRLPASVELDDLLQAGGIGLLNAVDRYDALQGTAFTTYAVQRIRGAMLDELRSRDWVPRSVRRNAREVAHAMGQLEQELGRNATETEVADRLGIAVEEYRQMLLDTNNSQLFSYDEWREEHGDSIELVTDEHQQENPLHHLMEGNLRQRVMEAIEALPEREQLVLTLYYQEELNLKEIGAVLEVGESRVSQLHSQAIKRLRTKLGKL
+======================================================
+======================================================
+RESULTS [blastp]
+----------------
+Name of Protein: MULTISPECIES: RNA polymerase sigma factor FliA [Enterobacteriaceae]
+Size of Protein:239
+Sequence identity:WP_008500338.1
+Similitarity: 100%
+======================================================
+RESULTS [tblastn]
+------------------
+Name of Gene: Salmonella enterica subsp. enterica serovar Typhimurium gene for sigma factor, complete cds
+Size of Gene: 1525
+Sequence identity: D00497.1
+Similitarity: 95.40%

@@ -1,0 +1,14 @@
+Qustion 1: What is Flutter Web?
+Answer: Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Windows, Mac, Linux, Google Fuchsia and the web.Flutter supports the generation of web content rendered using standards-based web technologies: HTML, CSS and JavaScript. With web support, you can compile existing Flutter code written in Dart into a client experience that can be embedded in the browser and deployed to any web server.
+
+Question 2: Why did you prefer flutter over HTML/CSS/PHP?
+Answer: Here are some points:
+1. Fast development: Flutter engineered for high development velocity. Flutter also ships with a rich set of customizable widgets, all built from modem reactive framework.
+2. Expressive + Flexible UI: Flutter moves to a widget, rendering, animation and gestures into this framework to give you to complete control over every pixel on the screen. 
+3. Native apps for Web, Android and IOS: Flutter apps follow platform conventions and interface details such as scrolling, navigation, icons, fonts, etc. 
+4. Hot Reload: In flutter, very save on the app and just as you do on the web just hit a refresh and your codes also refresh.
+5. High Performance: Flutter doesn’t require a Javascript bridge and the speed is much faster.
+6. Using Dart as a Programming Language: Dart uses for generational garbage collection which helps in creating frames for short-lived objects.
+7. Reduce the Third Parties: When using flutter, you can get complete IOS experience or Android Experience. So they are reducing the Third parties.
+8. API. The Flutter API is very consistent: AnimationBuilder, FutureBuilder, StreamBuilder, Once you understand them you have no limit. Anything is a widget.
+9. The customizable kit of Widgets: Flutter has built with a rich and customizable set of widgets for Android, IOS and Material Design. The collaboration between Flutter and Google’s material design has rendered and easily create powerful UI experience.

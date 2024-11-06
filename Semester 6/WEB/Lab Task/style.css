@@ -1,0 +1,9 @@
+p {
+    text-align: center;
+}
+
+img {
+    border-style: outset;
+    border-color: black;
+    border-radius: 1px;
+}

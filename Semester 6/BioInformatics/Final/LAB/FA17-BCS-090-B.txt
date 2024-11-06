@@ -1,0 +1,20 @@
+=================
+GIVEN SEQUENCE 68
+=================
+MNSLYTAEGVMDKHSLWQRYVPLVRHEALRLQVRLPASVELDDLLQAGGIGLLNAVDRYDALQGTAFTTYAVQRIRGAMLDELRSRDWVPRSVRRNAREVAHAMGQLEQELGRNATETEVADRLGIAVEEYRQMLLDTNNSQLFSYDEWREEHGDSIELVTDEHQQENPLHHLMEGNLRQRVMEAIEALPEREQLVLTLYYQEELNLKEIGAVLEVGESRVSQLHSQAIKRLRTKLGKL
+=================
+TASK 1
+https://www.uniprot.org/uniprot/A0A509D6U3
+=================
+Biological Process
+Molecular Function
+Protein Structure
+Protein Protein Interaction
+Domain
+Family
+=================
+TASK 2
+=================
+Converting into DNA Sequence
+Size
+=================

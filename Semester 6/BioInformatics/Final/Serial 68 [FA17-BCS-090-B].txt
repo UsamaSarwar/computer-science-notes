@@ -1,0 +1,11 @@
+*SERIAL 68*
+-----------
+*SEQUENCE*
+PEX5
+PIK3CA
+PIK3CB
+===========
+*PDB*
+1a09
+1a0b
+

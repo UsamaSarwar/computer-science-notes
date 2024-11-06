@@ -1,0 +1,40 @@
+.box1{
+    position: absolute;
+    display: block;
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+.box2{
+    position: absolute;
+    display: block;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: 200px;
+    z-index:-1;
+}
+.box3{
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    top: 300px;
+    left: 300px;
+    z-index: -2;
+}
+.wall{
+    position: absolute;
+    display: block;
+    aspect-ratio: inherit;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index:-10;
+}

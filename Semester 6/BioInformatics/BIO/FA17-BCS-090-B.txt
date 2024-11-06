@@ -1,0 +1,36 @@
+July 2, 2020
+USAMA SARWAR
+FA17-BCS-090-B
+
+b)
+Alpha Helix: 8
+Beta Sheets: 6
+F1: 3
+F2: 4
+F3: 1
+
+c)
+Alpha Helix: 8
+Beta Sheets: 4
+
+d)
+Domain 1 (GREEN): 1 Alpha Helix
+Domain 2 (BROWN): 4 Alpha Helix
+
+e)
+Domain 1 (RED):  8 Alpha Helix
+Domain 2 (PURPLE): 8 Alpha Helix
+F1: 3
+F2: 4
+F3: 1
+
+f)
+Domain 1 (PURPLE): 8 Alpha Helix
+F1: 3
+F2: 4
+F3: 1
+
+Domain 2 (CYAN): 8 Alpha Helix
+F1: 3
+F2: 4
+F3: 1

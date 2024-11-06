@@ -1,0 +1,23 @@
+.header_container{
+    position: absolute;
+    display: block;
+    background-color: blueviolet;
+    top: 2%;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+    height: 7%;
+    border-radius: 25px;
+}
+.home_button{
+    
+    margin: 1%;
+    padding: 1%;
+    background-color: whitesmoke;
+    border-radius: 100%;
+}
+#icons{
+    margin: 10%;
+    padding: 10%;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+table,
+th,
+td {
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid green;
+    table-layout: auto;
+    -o-table-baseline: inherit;
+    align-items: center;
+}
+
+li {
+    margin-left: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+.task2 {
+    background-color: lightgray;
+    width: 20%;
+    border-radius: 30px;
+    border: 2px dashed black;
+}

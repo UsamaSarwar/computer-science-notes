@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.main_page {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.one {
+  display: block;
+  position: relative;
+  background-color: blueviolet;
+  height: auto;
+  width: auto;
+  min-height: 50%;
+  min-width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.two {
+  display: block;
+  position: relative;
+  background-color: aqua;
+}
+.three {
+  display: block;
+  position: relative;
+  background-color: brown;
+}
