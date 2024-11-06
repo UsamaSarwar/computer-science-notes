@@ -1,0 +1,2 @@
+String name= Usama Sarwar;
+int age=25;

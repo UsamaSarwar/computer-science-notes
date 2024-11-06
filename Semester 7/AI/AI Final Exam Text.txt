@@ -1,0 +1,141 @@
+Question 1
+===========
+a
+The Turing Test is a deceptively simple method of determining whether a machine can demonstrate human intelligence: If a machine can engage in a conversation with a human without being detected as a machine, it has demonstrated human intelligence.
+
+b
+If an algorithm is complete, it means that if at least one solution exists then the algorithm is guaranteed find a solution in a finite amount of time.
+If a solution found for an algorithm is guaranteed to be the best solution (lowest path cost) among all other solutions, then such a solution for is said to be an optimal solution.
+
+c
+A problem can be analysed into more specific components. First of all it consists of the two situations, the present one which we will call the initial state, and the desired one, which we can call the goal state. The agent's task is to get from the initial state to the goal state by means of series of actions that change the state. The problem is solved if such a series of actions has been found, and the goal has been reached. In general, problem-solving is a component of goal-directed action or control.
+
+d
+A useful measure of search efficiency is the effective branching factor, B. It describes how sharply a search process is focussed toward the goal. Suppose that search finds a path of length d and generates a total of N nodes. B is then equal to the number of successors of each node in that tree.
+
+e
+A universal statement is a statement that is true if, and only if, it is true for every predicate variable within a given domain. An existential statement is a statement that is true if there is at least one variable within the variable's domain for which the statement is true.
+
+f
+The simplest best-first strategy is to minimize the estimated cost to reach the goal, i.e., always expand the node that appears to be closest to the goal. A function that calculates cost estimates is called an heuristic function.
+h(n) = estimated cost of the cheapest path from the state at n to a goal state.
+A best-first search that uses h to select the next node to expand is called a greedy search.
+
+g
+Plateau : On plateau all neighbors have same value . Hence, it is not possible to select the best direction. Ridge : Any point on a ridge can look like peak because movement in all possible directions is downward.
+
+h
+Procedural Knowledge means how a particular thing can be accomplished. While Declarative Knowledge means basic knowledge about something. Declarative Knowledge is data oriented in nature.
+
+i
+Before an agent can start searching for solutions, it must formulate a goal and then use that goal to formulate a problem. A problem consists of five parts: The state space, an initial situation, actions, a goal test, and path costs. A path from an initial state to a goal state is a solution.
+
+j
+A proposition is a collection of declarative statements that has either a truth value “true” or a truth value “false”. While a predicate logic is an expression of one or more variables defined on some specific domain.
+
+
+Question 2
+==========
+Clustering
+----------
+Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group and dissimilar to the data points in other groups. It is basically a collection of objects on the basis of similarity and dissimilarity between them.
+
+Hierarchical Clustering
+------------------------
+Hierarchical Clustering divides that data set into a number of clusters, where the user doesn’t specify the number of clusters to be generated before training the model (also known as connectivity-based methods). In this method, simple partitioning of the data set will not be done, whereas it provides us with the hierarchy of the clusters that merge with each other after a certain distance.  After the hierarchical clustering is done on the dataset the result will be a tree-based representation of data points [Dendogram], which are divided into clusters.
+
+Distribution Model-Based Clustring
+----------------------------------
+In this type of clustering, technique clusters are formed by identifying by the probability of all the data points in the cluster come from the same distribution (Normal, Gaussian). The most popular algorithm in this type of technique is Expectation-Maximization (EM) clustering using Gaussian Mixture Models (GMM).
+
+Density-Based Clustering
+------------------------
+Here clusters will be formed by segregation of various density regions based on different densities in the data plot. Density-Based Spatial Clustering and Application with Noise (DBSCAN) is the most used algorithm in this type of technique. There should be a minimum number of points that contain in the neighborhood of a given radius for each point in the cluster.
+
+Fuzzy Clustering
+----------------
+This type of clustering technique points close to the center, maybe a part of the other cluster to a higher degree than points at the edge of the same cluster. The probability of a point belonging to a given cluster is a value that lies between 0 to 1. The most popular algorithm in this type of technique is FCM (Fuzzy C-means Algorithm) Here, the centroid of a cluster is calculated as the mean of all points, weighted by their probability of belonging to the cluster.
+
+Partitioning Clustering
+-------------------------
+Partitioning Clustering is a type of clustering technique, that divides the data set into a set number of groups. For Example, the Value of K in KNN and it will be decided before we train the model.  It can be also called as a centroid based method. In this approach cluster center [centroid] is formed such that the distance of data points in that cluster is minimum when calculated with other cluster centroids. A most popular example of this algorithm is the  KNN algorithm. This is how a partitioning clustering algorithm looks like
+
+Question 3
+==========
+Techniques of knowledge representation
+--------------------------------------
+There are mainly four ways of knowledge representation which are given as follows:
+1. Logical Representation
+2. Semantic Network Representation
+3. Frame Representation
+4. Production Rules
+
+1. Logical Representation
+-------------------------
+Logical representation is a language with some concrete rules which deals with propositions and has no ambiguity in representation. Logical representation means drawing a conclusion based on various conditions. This representation lays down some important communication rules. It consists of precisely defined syntax and semantics which supports the sound inference. Each sentence can be translated into logics using syntax and semantics.
+
+2. Semantic Network Representation
+-----------------------------------
+Semantic networks are alternative of predicate logic for knowledge representation. In Semantic networks, we can represent our knowledge in the form of graphical networks. This network consists of nodes representing objects and arcs which describe the relationship between those objects. Semantic networks can categorize the object in different forms and can also link those objects. Semantic networks are easy to understand and can be easily extended.
+
+3. Frame Representation
+-----------------------
+A frame is a record like structure which consists of a collection of attributes and its values to describe an entity in the world. Frames are the AI data structure which divides knowledge into substructures by representing stereotypes situations. It consists of a collection of slots and slot values. These slots may be of any type and sizes. Slots have names and values which are called facets.
+
+4. Production Rules
+--------------------
+Production rules system consist of (condition, action) pairs which mean, "If condition then action". It has mainly three parts:
+- The set of production rules
+- Working Memory
+- The recognize-act-cycle
+In production rules agent checks for the condition and if the condition exists then production rule fires and corresponding action is carried out. The condition part of the rule determines which rule may be applied to a problem. And the action part carries out the associated problem-solving steps. This complete process is called a recognize-act cycle. The working memory contains the description of the current state of problems-solving and rule can write knowledge to the working memory. This knowledge match and may fire other rules. If there is a new situation (state) generates, then multiple production rules will be fired together, this is called conflict set. In this situation, the agent needs to select a rule from these sets, and it is called a conflict resolution.
+
+Question 4
+==========
+PEAS stands for Performance measure, Environment, Actuator, Sensor.
+1. Performance Measure: Performance measure is the unit to define the success of an agent.Performance varies with agents based on their different precept.
+2. Environment: Environment is the surrounding of an agent at every instant. It keeps changing with time if the agent is set in motion.There are 5 major types of environments:
+-  Fully Observable & Partially Observable
+-  Episodic & Static
+-  Static & Dynamic
+-  Discrete & Continuous
+- Deterministic & Stochastic
+3. Actuator: Actuator is a part of the agent that delivers the output of an action to the environment.
+4. Sensor: Sensors are the receptive parts of an agent which takes in the input for the agent.
+
+Enviornments of an agent
+------------------------
+1. Discrete / Continuous − If there are a limited number of distinct, clearly defined, states of the environment, the environment is discrete (For example, chess); otherwise it is continuous (For example, driving).
+2. Observable / Partially Observable − If it is possible to determine the complete state of the environment at each time point from the percepts it is observable; otherwise it is only partially observable.
+3. Static / Dynamic − If the environment does not change while an agent is acting, then it is static; otherwise it is dynamic.
+4. Single agent / Multiple agents − The environment may contain other agents which may be of the same or different kind as that of the agent.
+5. Accessible / Inaccessible − If the agent’s sensory apparatus can have access to the complete state of the environment, then the environment is accessible to that agent.
+6. Deterministic / Non-deterministic − If the next state of the environment is completely determined by the current state and the actions of the agent, then the environment is deterministic; otherwise it is non-deterministic.
+7. Episodic / Non-episodic − In an episodic environment, each episode consists of the agent perceiving and then acting. The quality of its action depends just on the episode itself. Subsequent episodes do not depend on the actions in the previous episodes. Episodic environments are much simpler because the agent does not need to think ahead.
+
+Question 5
+==========
+1. Convolution Neural Network
+-----------------------------
+A convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. The innovation of using the convolution operation in a neural network is that the values of the filter are weights to be learned during the training of the network. i.e Decoding Facial Recognition, Analyzing Documents and Historic and Environmental Collection etc
+
+2. Heuristic Function
+---------------------
+A heuristic function, also called simply a heuristic, is a function that ranks alternatives in search algorithms at each branching step based on available information to decide which branch to follow. For example, it may approximate the exact solution.
+
+3. Intelligent Personal Assistant
+---------------------------------
+An intelligent personal assistant (IPA) is a software agent that can perform tasks or services for an individual based on commands or questions. i.e Chatbots and Siri
+
+4. Classification
+-----------------
+In machine learning, classification refers to a predictive modeling problem where a class label is predicted for a given example of input data. Examples of classification problems include: Given an example, classify if it is spam or not. Given a handwritten character, classify it as one of the known characters.
+
+5. Uniform Cost Search
+----------------------
+Uniform-cost search is a searching algorithm used for traversing a weighted tree or graph. The primary goal of the uniform-cost search is to find a path to the goal node which has the lowest cumulative cost. Uniform-cost search expands nodes according to their path costs form the root node. i.e. Path Finding in maps
+
+Question 7
+==========
+Alpha-Beta and Minimax returned the same answer. All Alpha-Beta did is to prevent minimax from making calculations that are 100% guaranteed to NOT be an optimal state for the current player (MAX or MIN).
+

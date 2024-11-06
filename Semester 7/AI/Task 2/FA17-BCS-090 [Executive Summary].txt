@@ -1,0 +1,13 @@
+Artificial Intelligence in Action-Against COVID-19
+====================================
+– Sofia Goel*
+Research Scholar,SOCIS, IGNOU, New Delhi, India
+sofiagoel@gmail.com https://orcid.org/0000-0003-2186-8346
+– Sudhansh Sharma
+Assistant Professor, SOCIS, IGNOU, New Delhi, India
+sudhansh@ignou.ac.in https://orcid.org/0000-0002-6870-0885
+-----------------------------------------------------
+COVID19 is a hot topic of year 2020. As the entire health industry is seeking urgent solutions to halt the race of spread of COVID19. Crucial solutions are still to find to control the expansion of the virus. The major strength of AI is that it can systematically analyze the infection caused by the virus. It can predict and monitor the spread of infection based on current and previous data, contributing significantly to developing a vaccine for COVID19. However, pitfalls coming up in implementing AI is due to lack of data, and sometimes data found with missing values, noisy and has outliers. To overcome these problems is a challenge for researchers and concerned health experts. Nonetheless, AI can ascertain viral load dynamics for the prevention and control of the pandemic. Thus, a more comprehensive study on datasets must understand the virus's pathogenesis and put a crucial stop to the problem. 
+
+Main Point of focus:
+Pitfalls coming up in implementing AI is due to lack of data, and sometimes data found with missing values, noisy and has outliers. To overcome these problems is a challenge for researchers and concerned health experts.
